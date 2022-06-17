@@ -1,0 +1,1 @@
+gdal_merge.py -o input.tif src/*_1arc_v3.tif; rasterio rgbify -b -10000 -i 0.1 --max-z 11 --min-z 4 --format webp input.tif out.mbtiles; mb-util out.mbtiles docs/zxy 
